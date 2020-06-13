@@ -83,7 +83,7 @@ git clone https://github.com/dariustorabian/lyrics-classifier.git
 conda create --name <NameOfEnvironment> --file requirements.txt
 ```
 
-3. Run [lyrics_scraper.py](https://github.com/dariustorabian/lyrics-classifier/blob/master/src/lyrics_scraper.py) in the command line and with an artistpage URL from lyrics.com and an filename as arguments. For help, run `python lyrics_scraper.py -h`. The lyrics of this artist will then be scraped and saved under `/data/FILENAME.json`. Duplicates will be skipped automatically. Repeat this step for as many artists as you'd like to use.
+3. Run [lyrics_scraper.py](https://github.com/dariustorabian/lyrics-classifier/blob/master/src/lyrics_scraper.py) in the command line and with an artistpage URL from lyrics.com and a filename as arguments. For help, run `python lyrics_scraper.py -h`. The lyrics of this artist will then be scraped and saved under `/data/FILENAME.json`. Duplicates will be skipped automatically. Repeat this step for as many artists as you'd like to use.
 
 ![Lyrics Scraper](/images/lyrics_scraper.gif)
 
