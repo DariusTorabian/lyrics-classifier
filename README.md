@@ -49,10 +49,10 @@
 
 ![Project Preview](/images/lyrics_scraper.gif)
 
-In this project, I've built a lyrics scraper that automatically scrapes all songtexts of a given artist from his lyrics.com artistpage. The data is then written in a .json file. The .json's can then be used to create a 
+In this project, I've built a lyrics scraper that automatically scrapes all song texts of a given artist from his lyrics.com artistpage. The data is then written in a .json file. The .json's can then be used to create a
 Multinominal Naive Bayes model using spaCy's industry-strength natural language processor. The user can then input a string of text of his choice and the model will predict, which artist would have most likely sung that line, even if the artist never did.
 
-All modules have their own command-line interface for easy use. All credit for the songtexts belong to lyrics.com for their amazing work. Please follow common sense while scraping and don't DDOS them.
+All modules have their own command-line interface for easy use. All credit for the song texts belong to lyrics.com for their amazing work. Please follow common sense while scraping and don't DDOS them.
 
 
 ### Built With
@@ -87,12 +87,12 @@ conda create --name <NameOfEnvironment> --file requirements.txt
 
 ![Lyrics Scraper](/images/lyrics_scraper.gif)
 
-4. Run [model_creater.py](https://github.com/dariustorabian/lyrics-classifier/blob/master/src/model_creater.py) in the command line. You will be asked to input the `.json` files containing the songtexts that were scraped in the previous step and corresponding artist names. Then the Multinominal Naive Bayes model will be created and saved locally.
+4. Run [model_creater.py](https://github.com/dariustorabian/lyrics-classifier/blob/master/src/model_creater.py) in the command line. You will be asked to input the `.json` files containing the song texts that were scraped in the previous step and corresponding artist names. Then the Multinominal Naive Bayes model will be created and saved locally.
 
 ![Model Creater](/images/model_creater.gif)
 
 
-5. Run [lyrics_classifier.py](https://github.com/dariustorabian/lyrics-classifier/blob/master/src/lyrics_model.py) in the command line. It will automatically load the model created in the previous step. You will be askedd to input a string of text and get predictions on which artist of the ones in your model most likely sung that line. Feel free to use my `model.p` which is trained on `The Kooks, Mumford & Sons and Eminem`.
+5. Run [lyrics_classifier.py](https://github.com/dariustorabian/lyrics-classifier/blob/master/src/lyrics_model.py) in the command line. It will automatically load the model created in the previous step. You will be asked to input a string of text and get predictions on which artist of the ones in your model most likely sung that line. Feel free to use my `model.p` which is trained on `The Kooks, Mumford & Sons and Eminem`.
 
 ![Model Creater](/images/lyrics_classifier.gif)
 
